@@ -1,4 +1,4 @@
-// Dark/Light Mode Toggle with LocalStorage
+// Mode 
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
   
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Event listeners
   themeToggle.addEventListener('click', toggleTheme);
   
-  // Sync across tabs
   window.addEventListener('storage', function(e) {
     if (e.key === 'theme') {
       document.body.classList.toggle('light-mode', e.newValue === 'light');
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   
-  // Smooth scrolling for navigation links
+  // Scroll
   document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       if (this.hash !== "") {
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Project hover effects
+  // Effects
   const projects = document.querySelectorAll('.project');
   projects.forEach(project => {
     project.addEventListener('mouseenter', () => {
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Typing animation
+// Typing Animation
 document.addEventListener("DOMContentLoaded", function () {
   const phrases = [
     "Electrical Engineer",
