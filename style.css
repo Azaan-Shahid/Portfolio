@@ -344,21 +344,25 @@ footer a:hover {
   }
 }
 
-
-
 body {
   scroll-padding-top: 100px;
 }
 
 @media (max-width: 767px) {
+  header {
+    height: 70px; /* Fixed height for mobile header */
+  }
+  
   nav {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 15px;
+    gap: 10px;
     scroll-behavior: smooth;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    height: 100%;
     align-items: center;
   }
 
@@ -366,7 +370,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 15px;
+    gap: 10px;
+    padding: 0 10px;
   }
 
   nav a {
@@ -375,6 +380,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     transition: background-color 0.3s;
+    font-size: 0.9em;
   }
 
   nav a:hover {
@@ -383,18 +389,26 @@ body {
 
   #theme-toggle {
     flex-shrink: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-left: 10px;
   }
 
   .landing-section,
   .section {
-    padding-top: 200px !important; /* ✅ fixes overlap for both pages */
+    padding-top: 120px !important; /* Reduced padding to prevent overlap */
   }
 
   .about-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
   }
 
   .skills-container {
@@ -414,8 +428,17 @@ body {
     padding: 12px 20px;
     text-align: center;
   }
+  
+  /* Hide scrollbar but keep functionality */
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nav-links {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
-
 
 .typed-text-container {
   font-size: 1.3em;
@@ -436,4 +459,3 @@ body {
     opacity: 0;
   }
 }
-
