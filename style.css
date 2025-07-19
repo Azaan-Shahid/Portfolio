@@ -344,6 +344,11 @@ footer a:hover {
   }
 }
 
+
+body {
+  scroll-padding-top: 100px;
+}
+
 @media (max-width: 767px) {
   nav {
     flex-direction: column;
@@ -378,7 +383,8 @@ footer a:hover {
     align-items: center;
   }
 
-  .learn-more-btn, .contact-links a {
+  .learn-more-btn,
+  .contact-links a {
     font-size: 1em;
     padding: 12px 20px;
     text-align: center;
@@ -389,9 +395,10 @@ footer a:hover {
   }
 
   .landing-section {
-    padding-top: 180px; 
+    padding-top: 200px !important; 
   }
 }
+
 
 .typed-text-container {
   font-size: 1.3em;
