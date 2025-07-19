@@ -377,8 +377,17 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-}
 
+  .learn-more-btn, .contact-links a {
+    font-size: 1em;
+    padding: 12px 20px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 150px 20px 80px;
+  }
+}
 
 .typed-text-container {
   font-size: 1.3em;
