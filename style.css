@@ -408,3 +408,12 @@ footer a:hover {
     opacity: 0;
   }
 }
+
+body {
+  scroll-padding-top: 100px;
+}
+
+.landing-section {
+  padding-top: 120px;  
+}
+
