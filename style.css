@@ -387,6 +387,10 @@ footer a:hover {
   .section {
     padding: 150px 20px 80px;
   }
+
+  .landing-section {
+    padding-top: 180px; 
+  }
 }
 
 .typed-text-container {
@@ -407,13 +411,5 @@ footer a:hover {
   50% {
     opacity: 0;
   }
-}
-
-body {
-  scroll-padding-top: 100px;
-}
-
-.landing-section {
-  padding-top: 120px;  
 }
 
