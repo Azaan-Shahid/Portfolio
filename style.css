@@ -351,7 +351,6 @@ body {
 }
 
 @media (max-width: 767px) {
-
   nav {
     display: flex;
     flex-direction: row;
@@ -387,9 +386,9 @@ body {
     font-size: 1.2em;
   }
 
-  
-  .landing-section {
-    padding-top: 180px !important;
+  .landing-section,
+  .section {
+    padding-top: 200px !important; /* ✅ fixes overlap for both pages */
   }
 
   .about-container {
@@ -397,7 +396,6 @@ body {
     align-items: center;
     text-align: center;
   }
-
 
   .skills-container {
     flex-direction: column;
@@ -416,21 +414,8 @@ body {
     padding: 12px 20px;
     text-align: center;
   }
-
-  .section {
-    padding: 150px 20px 80px;
-  }
 }
 
-nav::-webkit-scrollbar {
-  height: 6px;
-}
-
-nav::-webkit-scrollbar-thumb {
-  background-color: var(--heading-color);
-  border-radius: 10px;
-}
-}
 
 .typed-text-container {
   font-size: 1.3em;
